@@ -1,0 +1,22 @@
+.common {
+    padding: 17px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #032541;
+}
+
+.common img {
+    margin-left: 40%;
+    border-radius: 4px;
+}
+
+.common p{
+    color: bisque;
+    font-weight: 700;
+}
+
+.common p span {
+    color: white;
+    font-weight: normal;
+}

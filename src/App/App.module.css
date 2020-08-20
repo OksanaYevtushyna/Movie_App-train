@@ -1,0 +1,15 @@
+.wrapper { 
+    display: grid;
+    grid-template-rows: 70px 5fr 35px;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 3px;
+    grid-template-areas: 
+    'header header'
+    'navbar main'
+    'footer footer';
+}
+
+.Main {
+    background-color: darkturquoise;
+    grid-area: main;
+}

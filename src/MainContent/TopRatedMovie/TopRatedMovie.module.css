@@ -1,0 +1,21 @@
+.topRated {
+    color: indianred;
+}
+
+.topRated h3 {
+    text-align: center;
+}
+
+.top {
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    background-color: honeydew;
+}
+
+.top:hover {
+    cursor: pointer;
+}
+

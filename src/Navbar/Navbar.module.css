@@ -1,0 +1,26 @@
+.Navbar {
+    background-color: indianred;
+    grid-area: navbar;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list a {
+    text-decoration: none;
+    margin: 5px 80px 5px 20px;
+    padding: 7px;
+}
+
+.list a:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: burlywood;
+    color: white;
+}
+
+.list a.active {
+    color: wheat
+}
