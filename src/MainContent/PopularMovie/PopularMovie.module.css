@@ -3,12 +3,23 @@
 }
 
 .movie {
-    width: 250px;
-    height: 50px;
+    width: 820px;
+    height: auto;
     border: 1px solid black;
     border-radius: 3px;
     background-color: cadetblue;
     color: white;
-    margin: 5px;
+    margin: 0 auto;
     padding-left: 10px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.movie img, .movie p {
+    padding-left: 30%;
+    padding-top: 25px;
+    border-radius: 3px;
 }

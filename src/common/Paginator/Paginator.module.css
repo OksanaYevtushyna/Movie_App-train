@@ -1,0 +1,19 @@
+.paginator {
+    color: black;
+}
+
+.paginator span {
+    margin-left: 4px;
+}
+
+.paginator span:hover {
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+.paginator span .active {
+    color: wheat;
+    font-weight: 600;
+}

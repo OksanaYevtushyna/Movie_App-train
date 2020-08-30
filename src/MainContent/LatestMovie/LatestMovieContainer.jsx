@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styles from './LatestMovie.module.css'
 import LatestMovie from './LatestMovie';
 import { connect } from 'react-redux';
 import { latestMoviesThunk } from '../../redux/latestReducer';
+import { recommedationMoviesThunk } from '../../redux/upcomingReducer';
 
 
 class LatestMovieContainer extends React.Component {
@@ -18,13 +19,14 @@ class LatestMovieContainer extends React.Component {
     }
 }
 
+
 let mapStateToProps = (state) => {
     return {
         latestMovie: state.latestReducer.latestMovies,
         isFetching: state.latestReducer.isLoading
     }
 }
-export default connect(mapStateToProps, { latestMoviesThunk })(LatestMovieContainer)
+export default connect(mapStateToProps, { latestMoviesThunk, recommedationMoviesThunk })(LatestMovieContainer)
 
 
 

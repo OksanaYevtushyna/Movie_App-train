@@ -1,7 +1,7 @@
 import React from 'react'
 import UpcomingMovie from './UpcomingMovie'
 import { connect } from 'react-redux'
-import { upcomingMoviesThunk } from '../../redux/upcomingReducer';
+import { upcomingMoviesThunk, recommedationMoviesThunk } from '../../redux/upcomingReducer';
 
 
 // const UpcomingMovieContainer = (props) => {
@@ -26,7 +26,8 @@ class UpcomingMovieContainer extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        upcomingMovies: state.upcomingReducer.upcomingMovies
+        upcomingMovies: state.upcomingReducer.upcomingMovies,
+        totalPages: state.upcomingReducer.total_pages
     }
 }
-export default connect(mapStateToProps, { upcomingMoviesThunk })(UpcomingMovieContainer) 
+export default connect(mapStateToProps, { upcomingMoviesThunk, recommedationMoviesThunk })(UpcomingMovieContainer) 

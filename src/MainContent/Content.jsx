@@ -4,7 +4,11 @@ import styles from './MainContent.module.css'
 const MainContent = () => {
     return (
         <div className={styles.Main}>
-            main content
+            <form>
+                <input placeholder='Username' />
+                <input placeholder='Password' />
+                <button>Log in</button>
+            </form>
         </div>
     )
 }

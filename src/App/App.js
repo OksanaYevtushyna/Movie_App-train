@@ -12,6 +12,8 @@ import LatestMovieContainer from '../MainContent/LatestMovie/LatestMovieContaine
 import UpcomingMovieContainer from '../MainContent/UpcomingMovie/UpcomingMovieContainer';
 import NowPlayingMovieContainer from '../MainContent/NowPlaying/NowPlayingMovieContainer';
 import TopRatedMovieContainer from '../MainContent/TopRatedMovie/TopRatedMovieContainer';
+import SimilarMovieContainer from '../MainContent/Similar/SimilarMovieContainer';
+import Recommedation from '../MainContent/Recommedation/Recommedation';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
             <Route path='/upcoming' component={UpcomingMovieContainer} />
             <Route path='/now_palying' component={NowPlayingMovieContainer} />
             <Route path='/top_rated' component={TopRatedMovieContainer} />
+            <Route path='/similar/:movieId?' component={SimilarMovieContainer} />
+            <Route path='/recommedation' component={Recommedation} />
           </div>
           <Footer />
         </div>

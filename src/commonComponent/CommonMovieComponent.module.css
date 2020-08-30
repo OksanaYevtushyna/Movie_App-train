@@ -20,3 +20,13 @@
     color: white;
     font-weight: normal;
 }
+
+.recommend {
+    margin: 10px;
+    height: 55px;
+    width: 140px;
+    border-radius: 4px;
+    color: black;
+    background-color: lightblue;
+    font-weight: 600;
+}
